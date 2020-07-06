@@ -1,0 +1,41 @@
+
+{%block head%}
+<!-- adiciona link externo -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+{%endblock%}
+
+<div class="app">
+{%extends "layout.njk"%}
+{%block content%}
+    <main class="receps-receps">
+    {# para rodar todos os cards pode ser usado o for, assim não tera que codificar 12 cards #}
+    {# a cada items o for vai chamar um item nome que foi dado ao array que esta no aquivo server #}
+    {# para chamar a o elemento do array basta usar {{nome.do.elemento}} #}
+    {%for item in items%}
+        <div class="recipe__content" id="{{item.id}}" >
+            <div class="recipes__image-container">
+                <img src="https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/{{item.id}}.png" alt="{{item.title}}">
+            </div>
+            <div class="recipes__info">
+                <h4 class="recipes__name">{{item.title}}</h4>
+                <p class="chef">{{item.author}}</p>
+            </div>
+        </div>
+    {%endfor%}
+    </main>
+
+    <!-- Active é a segunda class -->
+    <div class="modal__overlay">
+        <div class="modal">
+            <div class="modal__content">
+                <img src="" alt="">
+                <h4 class="p_content"></h4>
+                <p class="p_chef"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>    
+{% endblock %}
+</div>
