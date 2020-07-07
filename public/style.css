@@ -63,7 +63,7 @@ header{
     grid-template-columns: 1fr 1fr;
     margin: 0 auto;
     max-width: 800px;
-    background: url(/assets/burger.png);
+    background: url(assets/burger.png);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 8px;
