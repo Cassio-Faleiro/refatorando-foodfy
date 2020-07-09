@@ -1,20 +1,9 @@
-const modalOverlay = document.querySelector('.modal__overlay')
-const receps = document.querySelectorAll('.recipe__content')
+const recepes = document.querySelectorAll('.recipe__content')
 
 
-for(let recep of receps){
-    recep.addEventListener("click", function(){
-        const img = recep.getAttribute("id")
-        const recipesName = recep.querySelector(".recipes__name").textContent
-        const chefName = recep.querySelector(".chef").textContent
-        modalOverlay.classList.add('active')
-        modalOverlay.querySelector("img").src = `https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/${img}.png`
-        modalOverlay.querySelector("h4").textContent = recipesName
-        modalOverlay.querySelector("p").textContent = chefName
+for(let recipe of recepes){
+    recipe.addEventListener("click", function(){
+        const pegaId = recipe.getAttribute("id")
+        window.location.href=`/receita/${pegaId}`
     })
 }
-
-// fecha o modal removendo a class active
-modalOverlay.addEventListener("click", function(){
-    modalOverlay.classList.remove("active")
-})
