@@ -21,8 +21,8 @@
         {%for item in items%}
             {%if item.display_on%}       
                 <div class="recipe__content" id="{{item.id}}" >
-                    <div class="recipes__image-container">
-                        <img src="https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/{{item.id}}.png" alt="{{item.title}}">
+                    <div class="recipes__image">
+                        <img src="{{item.image}}" alt="{{item.title}}">
                     </div>
                     <div class="recipes__info">
                         <h4 class="recipes__name">{{item.title}}</h4>
