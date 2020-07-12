@@ -214,7 +214,26 @@ main.receps-receps{
     line-height: 30px;
 }
 
+#sub_title h3{
+    color: var(--color-content);
+    max-width: 940px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+}
+
 ul{
-    padding-left: 2%;
+    list-style-position: inside;
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+ul li{
+    font-size: 18px;
+    line-height: 28px;
+    font-family: Roboto-Regular;
 }
 
