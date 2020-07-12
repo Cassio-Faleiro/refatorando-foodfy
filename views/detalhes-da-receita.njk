@@ -6,9 +6,17 @@
                 <img src="{{items.image}}" alt="{{items.title}}">
             </div>
             <div class="recipes__information">
-                <h4 class="recipe__title">{{items.title}}</h4>
-                <p class="recipe__author">{{items.author}}</p>
+                <h2 class="recipe__title">{{items.title}}</h2>
+                <p class="recipe__author">por {{items.author}}</p>
             </div>
+            <div id="sub_title">
+                <h3>Igredientes</h3>
+            </div>
+            <ul>
+                {%for ingredients in items.ingredients%}
+                <li>{{ingredients}}</li>
+                {%endfor%} 
+            </ul>
         </div>
         <script src="scripts.js"></script> 
     {% endblock %}

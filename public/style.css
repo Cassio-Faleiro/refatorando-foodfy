@@ -190,47 +190,31 @@ main.receps-receps{
     height: 100vh;
 }
 
-
-
-
-
-
-
-/*==MODAL ACTIVE==*/
-.modal__overlay.active{
-    /*==Quando a class active for ativado, o opacity fica 1 e o visibity ativa==*/
-    opacity: 1;
-    visibility: visible;    
-}
-
-.modal__content{
-    width: 100%;
-    height: 100%;
+.recipe__image img{
     display: flex;
-    flex-direction: column;
-    position: absolute;
-}
-
-.modal__content img{
-    margin: 2% auto;
-    width: 95%;
-    height: 50%;
+    justify-content: center;
+    margin: 0 auto;
     border-radius: 15px;
 }
 
-.p_content {
-    font-family: 'Poppins ', sans-serif;
-    padding-top: 10px;
-    text-align: center;
-    color: #111111;
-    font-size: 24px;
-    line-height: 34px;
+.recipes__information{
+    padding: 5%;
+    display: grid;
+    justify-content: center;
+    color: var(--color-content);
+    font-size: 36px;
+    line-height: 46px;
 }
 
-.p_chef {
-    color: #777777;
-    font-family: 'Poppins ', sans-serif;
-    text-align: center;
-    font-size: 18px;
-    line-height: 28px;
+.recipes__information p{
+    opacity: 0.5;
+    padding-left: 30%;
+    padding-top: 2%;
+    font-size: 20px;
+    line-height: 30px;
 }
+
+ul{
+    padding-left: 2%;
+}
+
