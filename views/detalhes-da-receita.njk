@@ -9,15 +9,18 @@
                 <h2 class="recipe__title">{{items.title}}</h2>
                 <p class="recipe__author">por {{items.author}}</p>
             </div>
-            <div id="sub_title">
+            <div class="igredientes">
                 <h3>Igredientes</h3>
+                <a class="button">Esconder</a>
+                <div class="content_igredients">
+                    <ul>
+                        {%for ingredients in items.ingredients%}
+                        <li>{{ingredients}}</li>
+                        {%endfor%} 
+                    </ul>
+                </div>
             </div>
-            <ul>
-                {%for ingredients in items.ingredients%}
-                <li>{{ingredients}}</li>
-                {%endfor%} 
-            </ul>
         </div>
-        <script src="scripts.js"></script> 
+        <script src="scripts.js"></script>
     {% endblock %}
 </div>

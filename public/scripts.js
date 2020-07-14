@@ -7,3 +7,17 @@ for(let recipe of recepes){
         window.location.href=`/receita/${pegaId}`
     })
 }
+
+const content = document.querySelectorAll('.content_igredients')
+const buttons = document.querySelectorAll('.button')
+
+buttons.addEventListener("click", function(){  
+    if(content.classList.contains('active') === false){
+        content.classList.add('active')       
+    }else{
+        content.classList.remove('active')   
+    }
+})
+
+// buttons.textContent = 'Esconder'
+// buttons.textContent = 'Mostrar'
