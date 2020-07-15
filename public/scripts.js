@@ -8,18 +8,17 @@ for(let recipe of recepes){
     })
 }
 
-const content = document.querySelectorAll('.content_igredients')
+const content = document.querySelector('.content_igredients')
 const buttons = document.querySelectorAll('.button')
 
 for(let button of buttons){
     button.addEventListener("click", function(){  
         if(content.classList.contains('active') === false){
-            content.classList.add('active')       
+            content.classList.add('active')
+            button.textContent = 'Esconder'       
         }else{
-            content.classList.remove('active')   
+            content.classList.remove('active') 
+            button.textContent = 'Mostrar'  
         }
     })
 }
-
-// buttons.textContent = 'Esconder'
-// buttons.textContent = 'Mostrar'
