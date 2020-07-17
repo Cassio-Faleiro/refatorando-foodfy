@@ -11,15 +11,27 @@
             </div>
             <div class="igredients">
                 <h3>Igredientes</h3>
-                <a class="button">Mostrar</a>
+                <a class="button">Esconder</a>
             </div>
             <div class="content_igredients">
-                <ul>
+                <ul class="hide">
                     {%for ingredients in items.ingredients%}
                     <li>{{ingredients}}</li>
                     {%endfor%} 
                 </ul>
             </div>
+            <div class="preparation">
+                <h3>Modo de preparo</h3>
+                <a class="button">Esconder</a>
+            </div>
+            <div class="content_preparation">
+                <ul class="hide">
+                    {%for prep in items.preparation%}
+                    <li>{{prep}}</li>
+                    {%endfor%} 
+                </ul>
+            </div>
+
         </div>
         <script src="/scripts.js"></script>
     {% endblock %}

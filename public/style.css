@@ -13,8 +13,6 @@
 body{
     color: var(--color-content);
     font-family: 'Roboto', sans-serif;
-    width: 100%;
-    height: 100%;
 }
 
 .app{ 
@@ -160,6 +158,7 @@ main p{
 /*==RECEITAS==*/
 
 main.receps-receps{
+    margin: 0 auto;
     height: 100vh;
     max-width: 800px;
     display: grid;
@@ -187,7 +186,7 @@ main.receps-receps{
 
 /*TELA DETALHES DA RECEITA*/
 .recipe__details{
-    height: 100vh;
+    height: 100%;
 }
 
 .recipe__image img{
@@ -213,20 +212,22 @@ main.receps-receps{
     font-size: 20px;
     line-height: 30px;
 }
-/*CONTENT*/
-.igredients{
-    display: grid;
-    grid-template-columns: 150px 100px;
-    align-items: end;
+/*BLOCO igredients*/
+.igredients,
+.preparation {
+    display: flex;
     margin: auto 20.4%;
     padding-bottom: 2%;
+    align-items: baseline;
 }
 
-.igredients h3{
+.igredients h3,
+.preparation h3{
+    padding-right: 2%;
     color: var(--color-content);
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 23px;
     line-height: 30px;
 }
 
@@ -240,23 +241,24 @@ main.receps-receps{
 }
 
 /*Esconder conteudo da ul*/
-.content_igredients{
+.hide{
     max-width: 940px;
     display: none;
     overflow: hidden;
 }
 
 /*Mostrar o content da ul*/
-.content_igredients.active{
+.hide.active{
+    padding-bottom: 5%;
     display: block;
     list-style-position: inside;
     margin: auto 20.4%;
 }
 
-.content_igredients ul li{
+.content_igredients ul li,
+.content_preparation ul li{
     font-size: 18px;
     line-height: 28px;
     font-family: Roboto-Regular;
 }
-
 

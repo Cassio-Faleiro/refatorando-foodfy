@@ -8,17 +8,18 @@ for(let recipe of recepes){
     })
 }
 
-const content = document.querySelector('.content_igredients')
+const hide = document.querySelectorAll('.hide')
 const buttons = document.querySelectorAll('.button')
 
-for(let button of buttons){
-    button.addEventListener("click", function(){  
-        if(content.classList.contains('active') === false){
-            content.classList.add('active')
-            button.textContent = 'Esconder'       
+
+for (let i = 0; i < buttons.length; i++){
+    buttons[i].addEventListener("click", function(){
+        if(buttons[i].innerHTML == 'Esconder'){
+            hide[i].classList.add('active')
+            buttons[i].innerHTML = 'Mostrar'
         }else{
-            content.classList.remove('active') 
-            button.textContent = 'Mostrar'  
+            hide[i].classList.remove('active')
+            buttons[i].innerHTML = 'Esconder'
         }
     })
 }
