@@ -9,16 +9,16 @@
                 <h2 class="recipe__title">{{items.title}}</h2>
                 <p class="recipe__author">por {{items.author}}</p>
             </div>
-            <div class="igredientes">
+            <div class="igredients">
                 <h3>Igredientes</h3>
                 <a class="button">Mostrar</a>
-                <div class="content_igredients">
-                    <ul>
-                        {%for ingredients in items.ingredients%}
-                        <li>{{ingredients}}</li>
-                        {%endfor%} 
-                    </ul>
-                </div>
+            </div>
+            <div class="content_igredients">
+                <ul>
+                    {%for ingredients in items.ingredients%}
+                    <li>{{ingredients}}</li>
+                    {%endfor%} 
+                </ul>
             </div>
         </div>
         <script src="/scripts.js"></script>
