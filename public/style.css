@@ -103,6 +103,23 @@ header{
 
 }
 
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    background: #EEEEEE;
+    height: 4vh;
+}
+
+footer p{
+    margin: 0;
+    color: #999999;
+    text-align: center;
+    font-family: Roboto-Regular;
+    font-size: 14px;
+}
+
 /*==RECEITAS TELA PRINCIPAL==*/
 .recipes{
     max-width: 800px;
@@ -227,7 +244,7 @@ main.receps-receps{
     color: var(--color-content);
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 23px;
+    font-size: 24px;
     line-height: 30px;
 }
 
@@ -255,8 +272,7 @@ main.receps-receps{
     margin: auto 20.4%;
 }
 
-.content_igredients ul li,
-.content_preparation ul li{
+ul li{
     font-size: 18px;
     line-height: 28px;
     font-family: Roboto-Regular;
