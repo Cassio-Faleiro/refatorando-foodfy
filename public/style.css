@@ -231,7 +231,8 @@ main.receps-receps{
 }
 /*BLOCO igredients*/
 .igredients,
-.preparation {
+.preparation,
+.information {
     display: flex;
     margin: auto 20.4%;
     padding-bottom: 2%;
@@ -239,7 +240,8 @@ main.receps-receps{
 }
 
 .igredients h3,
-.preparation h3{
+.preparation h3,
+.information h3{
     padding-right: 2%;
     color: var(--color-content);
     font-family: 'Roboto', sans-serif;
@@ -278,3 +280,8 @@ ul li{
     font-family: Roboto-Regular;
 }
 
+.content_information p{
+    font-size: 18px;
+    line-height: 28px;
+    font-family: Roboto-Regular;
+}

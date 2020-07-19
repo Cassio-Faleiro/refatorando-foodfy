@@ -14,7 +14,7 @@
                 <a class="button">Esconder</a>
             </div>
             <div class="content_igredients">
-                <ul class="hide">
+                <ul class="hide active">
                     {%for ingredients in items.ingredients%}
                     <li>{{ingredients}}</li>
                     {%endfor%} 
@@ -25,13 +25,21 @@
                 <a class="button">Esconder</a>
             </div>
             <div class="content_preparation">
-                <ul class="hide">
+                <ul class="hide active">
                     {%for prep in items.preparation%}
                     <li>{{prep}}</li>
                     {%endfor%} 
                 </ul>
             </div>
-
+            <div class="information">
+                <h3>Modo de preparo</h3>
+                <a class="button">Esconder</a>
+            </div>
+            <div class="content_information">
+                <p class="hide active">
+                    {{items.information}}
+                </p>
+            </div>
         </div>
         <script src="/scripts.js"></script>
     {% endblock %}
